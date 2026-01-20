@@ -1,0 +1,21 @@
+service: ecom-auth-service
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-south-1
+
+functions:
+  login:
+    handler: src/handlers/LoginUser_T.handler
+    events:
+      - httpApi:
+          path: /auth/login
+          method: post
+
+  register:
+    handler: src/handlers/RegisterUser_T.handler
+    events:
+      - httpApi:
+          path: /auth/register
+          method: post
