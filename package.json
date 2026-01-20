@@ -1,0 +1,9 @@
+{
+  "name": "ecom-auth-service",
+  "version": "1.0.0",
+  "main": "src/handlers/LoginUser_T.js",
+  "dependencies": {
+    "aws-sdk": "^2.1480.0",
+    "jsonwebtoken": "^9.0.0"
+  }
+}
